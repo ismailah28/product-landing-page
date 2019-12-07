@@ -1,7 +1,7 @@
 :root {
   --primary-color: #333;
   --secondary-color: #444;
-  --overlay-color: rgba(0.7);
+  --overlay-color: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -73,6 +73,7 @@ img {
   color: #555;
 }
 
+/* Showcase */
 .showcase {
   margin: 2rem 0;
 }
@@ -94,6 +95,13 @@ img {
   margin: 1rem 0;
 }
 
+/* Overlay */
+.section-b {
+  position: relative;
+  background: url(../img/section-bg.jpg) no-repeat bottom center/cover;
+  height: 600px;
+}
+
 /* Utilities */
 .btn {
   display: inline-block;
@@ -108,4 +116,39 @@ img {
 
 .btn:hover {
   background: var(--secondary-color);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay-color);
+}
+
+.overlay-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+}
+
+.overlay-inner h3 {
+  font-size: 2rem;
+}
+
+.overlay-inner h2 {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.overlay-inner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
